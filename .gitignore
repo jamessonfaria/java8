@@ -1,0 +1,6 @@
+target/*
+/target/
+.editorconfig
+settings.json
+out/*
+/out/
