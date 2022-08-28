@@ -4,3 +4,5 @@ target/*
 settings.json
 out/*
 /out/
+.idea/
+*.iml
