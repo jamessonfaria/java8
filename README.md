@@ -22,3 +22,6 @@
 
 - __Method Reference__ (Desenvolver código que utiliza uma referência a método, incluindo a refatoração de uma
   expressão lambda para uma referência a método. A sintaxe de referência a um método é uma novidade do Java 8)
+  
+
+- __Debug Lambda__ (Formas para realizar debug de lambda)

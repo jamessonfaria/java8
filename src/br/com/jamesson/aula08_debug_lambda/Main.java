@@ -1,7 +1,9 @@
+package br.com.jamesson.aula08_debug_lambda;
+
 import java.util.Arrays;
 import java.util.List;
 
-public class Java8DebugLambda {
+public class Main {
 
     public static void main(String[] args) {
 
@@ -11,8 +13,9 @@ public class Java8DebugLambda {
                 .map(n -> new StringBuilder().append(n).append("s").append("a"))
                 .forEach(System.out::println);
 
-        // formas de quebrar o codigo para debugar
+        // *** Formas de quebrar o codigo para debugar
 
+        // usando chaves para quebrar em bloco
         list.stream()
                 .map((n) -> {
                     StringBuilder stringBuilder = new StringBuilder();
@@ -23,10 +26,10 @@ public class Java8DebugLambda {
                 })
                 .forEach(System.out::println);
 
+        // isolando o codigo em um metodo estatico e chamando via method reference
         list.stream()
-                .map(Java8DebugLambda::getStringBuilder)
+                .map(Main::getStringBuilder)
                 .forEach(System.out::println);
-
 
         // usando o metodo peek (log ou debug)
         list.stream()
