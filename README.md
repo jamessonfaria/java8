@@ -25,3 +25,6 @@
   
 
 - __Debug Lambda__ (Formas para realizar debug de lambda)
+  
+
+- __Interfaces Funcionais__ (São novas interfaces para o Java utilizar em conjunto com as lambdas, permitindo assim passar funções como parâmetros. As interfaces descritas aqui estão disponíveis no pacote java.util.function)
