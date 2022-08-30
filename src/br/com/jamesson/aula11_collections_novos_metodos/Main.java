@@ -45,7 +45,7 @@ public class Main {
         map.merge(3, "!", (v1, v2) -> v1 + v2);
         map.forEach((k , v) -> System.out.println(k + v));
 
-        // replaceAll - receber a chave e valor e faz um replace baseado na lambda
+        // replaceAll - recebe a chave e valor e faz um replace baseado na lambda
         map.replaceAll((k, v) -> v + "!");
         map.forEach((k , v) -> System.out.println(k + v));
 
