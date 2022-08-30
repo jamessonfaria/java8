@@ -34,3 +34,11 @@
   
 
 - __Aula11 - Collections Novos Métodos__ (Novos métodos para manipulação de Collections)
+  
+
+- __Aula12 - Streams Paralelos__ (Desenvolver código que usa Streams Paralelos, incluindo operação de decomposição e
+  operação de redução em Streams. Streams paralelos são executados por mais
+  de uma Thread, geralmente uma quantidade igual à quantidade de núcleos do processador onde a
+  aplicação está sendo executada. Apesar disso, nem sempre é útil utilizá-los. Seu ganho real é em
+  Streams com grande volumes de dados. Em um Stream pequeno, transformá-lo em paralelo pode
+  até causar uma perda de performance)
