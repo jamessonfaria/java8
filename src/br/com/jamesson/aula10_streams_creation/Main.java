@@ -1,3 +1,5 @@
+package br.com.jamesson.aula10_streams_creation;
+
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -9,7 +11,7 @@ import java.util.regex.Pattern;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
-public class Java8_Streams_Creation {
+public class Main {
 
     public static void main(String[] args) throws IOException {
 
@@ -29,11 +31,11 @@ public class Java8_Streams_Creation {
         IntStream.rangeClosed(15,20).forEach(System.out::println);
 
         // Stream.iterate
-        Stream.iterate(5, n -> n * 2)
-                .limit(10)
+        Stream.iterate(5, n -> n * 2) // seed é o valor incial
+                .limit(5)
                 .forEach(System.out::println);
 
-        // BufferedReader - lines
+        // BufferedReader - lines (ler as linhas de um arquivo como stream)
         // streams.txt
         File file = new File("streams.txt");
         FileReader in = new FileReader(file);
@@ -41,17 +43,17 @@ public class Java8_Streams_Creation {
             br.lines().forEach(System.out::println);
         }
 
-        // Files
+        // Files (o list do Files é um stream)
         Path p = Paths.get("");
         Files.list(p).forEach(System.out::println);
 
         // Random
-        new Random().ints()
-                .limit(10)
+        new Random().ints() // o ints retorna um stream de inteiros aleatorios
+                .limit(4)
                 .forEach(System.out::println);
 
 
-        // Pattern regex
+        // Pattern regex (o splitAsStream retorna um stream do pattern)
         String s = "Deixa eu curtir o codigo";
         Pattern pa = Pattern.compile(" ");
         pa.splitAsStream(s).forEach(System.out::println);

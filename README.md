@@ -28,3 +28,6 @@
   
 
 - __Interfaces Funcionais__ (São novas interfaces para o Java utilizar em conjunto com as lambdas, permitindo assim passar funções como parâmetros. As interfaces descritas aqui estão disponíveis no pacote java.util.function)
+  
+
+- __Streams Creation__ (Crie Streams de qualquer coisa. Stream esta disponivel para todas as interfaces que extenderem Collection)
