@@ -9,8 +9,10 @@
   
 
 - __Reduce__ (Reduce é uma das principais operações final que podem ser feitas em um Stream. Reduce é uma
-  operação que transforma os vários valores do Stream em um único valor) 
+  operação que transforma os vários valores do Stream em um único valor, é para trabalhar com objetos imutáveis) 
   
 
-- __Collect em Streams__ ()
+- __Collect__ (A operação final collect também é um tipo de Reduce, porém é utilizada para objetos mutáveis. Ou
+  seja, ao invés de utilizar a operação reduce com String, provavelmente seria mais eficiente utilizar a
+  operação collect com a classe StringBuilder, para evitar a criação de vários objetos do tipo String)
 
