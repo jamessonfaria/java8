@@ -42,3 +42,6 @@
   aplicação está sendo executada. Apesar disso, nem sempre é útil utilizá-los. Seu ganho real é em
   Streams com grande volumes de dados. Em um Stream pequeno, transformá-lo em paralelo pode
   até causar uma perda de performance)
+  
+
+- __Aula13 - Api de Data e Hora__ (Nova API para trabalhar data e hora, as classes são imutáveis)
